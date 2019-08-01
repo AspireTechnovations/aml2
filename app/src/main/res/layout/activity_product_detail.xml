@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:context=".activities.ProductListActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="@dimen/space_54"
+            android:padding="@dimen/space_5"
+            >
+
+            <EditText
+                android:layout_width="@dimen/space_140"
+                android:layout_height="@dimen/space_30"
+                android:layout_gravity="center_vertical"
+                android:drawableRight="@drawable/ic_search"
+                android:paddingRight="@dimen/space_5"
+                android:hint="Search"
+                android:id="@+id/et_search"
+                android:textSize="@dimen/text_size_14sp"
+                android:paddingLeft="@dimen/space_20"
+                android:background="@drawable/drawable_search"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right|center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="@dimen/space_32"
+                    android:layout_height="@dimen/space_32"
+                    android:src="@drawable/ic_notifications"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/space_32"
+                    android:layout_height="@dimen/space_32"
+                    android:src="@drawable/ic_location"
+                    android:layout_gravity="center"
+                    />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/aluminum"
+                    android:id="@+id/im_cart"
+                    android:src="@drawable/ic_cart"
+                    />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/space_5"
+                    android:paddingLeft="@dimen/space_5"
+                    android:paddingTop="@dimen/space_10"
+                    android:paddingBottom="@dimen/space_10"
+
+                    android:orientation="horizontal"
+                    android:background="@color/bar_background"
+                    >
+
+
+
+
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_border_grey"
+                        android:drawableLeft="@drawable/ic_location"
+                        android:paddingLeft="@dimen/space_5"
+                        android:id="@+id/et_location"
+                        android:hint="No location "
+                        android:focusable="false"
+                        android:textSize="@dimen/text_size_14sp"
+
+                        android:paddingTop="@dimen/space_5"
+                        android:layout_margin="@dimen/space_3"
+                        android:paddingBottom="@dimen/space_5"
+                        />
+
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/space_10"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+
+                   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_10"
+                        android:background="@drawable/shape_border_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <RatingBar
+                                android:id="@+id/ratingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:rating="3"
+                                android:layout_gravity="right"
+
+                                android:theme="@style/MyRatingBar"
+
+                                style="?android:attr/ratingBarStyleSmall"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".7"
+                                android:background="@color/aluminum"
+                                >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/space_120"
+                                    android:background="@color/white"
+                                    android:src="@drawable/im_piston"
+                                    android:id="@+id/im_product"
+
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".3"
+                                android:orientation="vertical"
+                                android:padding="@dimen/space_5"
+                                android:layout_gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Name of the Product"
+                                    android:textStyle="bold"
+                                    android:id="@+id/tv_title"
+                                    android:layout_margin="@dimen/space_3"
+
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="By Honda"
+                                    android:id="@+id/tv_maker"
+                                    android:layout_margin="@dimen/space_3"
+
+                                    />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/price"
+                                        android:textStyle="bold"
+                                        android:id="@+id/tv_discounted"
+                                        android:layout_margin="@dimen/space_3"
+
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rs.9,899"
+                                        android:id="@+id/tv_actual"
+                                        android:textColor="@color/aluminum"
+                                        android:layout_margin="@dimen/space_3"
+
+                                        />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="You save:"
+
+                                        android:textSize="@dimen/text_size_14sp"
+                                        android:textColor="@color/aluminum"
+                                        android:layout_margin="@dimen/space_3"
+
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="9,500"
+
+                                        android:textSize="@dimen/text_size_14sp"
+                                        android:textColor="@color/orange"
+                                        android:layout_margin="@dimen/space_3"
+
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="(46%)"
+
+                                        android:textSize="@dimen/text_size_14sp"
+                                        android:textColor="@color/aluminum"
+                                        android:layout_margin="@dimen/space_3"
+
+                                        />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cash on Delivery Available"
+                                    android:paddingLeft="@dimen/space_10"
+                                    android:textStyle="bold"
+
+                                    android:textSize="@dimen/text_size_14sp"
+                                    android:textColor="@color/aluminum"
+                                    android:layout_margin="@dimen/space_3"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Order Now, Free delivery within 40 mins."
+
+                                    android:textStyle="bold"
+
+                                    android:textSize="@dimen/text_size_12sp"
+                                    android:textColor="@color/jet"
+                                    android:layout_margin="@dimen/space_3"
+
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/aluminum"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                       android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Qty: 1-5 Rs.9,899"
+                            android:id="@+id/tv_qty"
+
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+
+                            android:textSize="@dimen/text_size_14sp"
+                            android:textColor="@color/buttons"
+                            android:layout_margin="@dimen/space_5"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            >
+
+                            <Button
+                                android:layout_width="@dimen/space_30"
+                                android:layout_height="@dimen/space_30"
+                                android:text="-"
+                                android:id="@+id/btn_minus"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/text_size_21sp"
+                                android:textColor="@color/aluminum"
+                                android:background="@drawable/shape_grey"
+                                />
+                            <EditText
+                                android:layout_width="@dimen/space_30"
+                                android:layout_height="@dimen/space_30"
+                                android:text="2"
+                                android:id="@+id/et_qty"
+                                android:textSize="@dimen/text_size_14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/aluminum"
+                                android:background="@drawable/shape_border_grey"
+                                />
+                            <Button
+                                android:layout_width="@dimen/space_30"
+                                android:layout_height="@dimen/space_30"
+                                android:background="@drawable/shape_grey"
+                                android:text="+"
+                                android:id="@+id/btn_plus"
+                                android:textStyle="bold"
+                                android:textColor="@color/aluminum"
+                                android:textSize="@dimen/text_size_16sp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Product Price: Rs.9,899"
+                            android:id="@+id/tv_price"
+
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+
+                            android:textSize="@dimen/text_size_12sp"
+                            android:textColor="@color/buttons"
+                            android:layout_margin="@dimen/space_5"
+
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Qty: 6 or more"
+
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+
+                            android:textSize="@dimen/text_size_14sp"
+                            android:textColor="@color/buttons"
+                            android:layout_margin="@dimen/space_5"
+
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/space_30"
+                            android:text="Get Quote"
+                            android:textAllCaps="false"
+                            android:id="@+id/btn_qoute"
+                            android:paddingTop="@dimen/space_5"
+                            android:paddingBottom="@dimen/space_5"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                             android:textSize="@dimen/text_size_12sp"
+                            android:textColor="@color/aluminum"
+                            android:background="@drawable/shape_grey"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/aluminum"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Supplier Profile"
+
+                    android:textStyle="bold"
+                    android:layout_gravity="left"
+                    android:textAlignment="center"
+                    android:paddingLeft="@dimen/space_6"
+
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/buttons"
+                    android:layout_margin="@dimen/space_5"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manohar AutoProduct Supplier"
+
+                    android:textStyle="bold"
+                    android:layout_gravity="left"
+
+                    android:textAlignment="center"
+                    android:paddingLeft="@dimen/space_16"
+
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/buttons"
+                    android:layout_margin="@dimen/space_5"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="@dimen/space_60"
+                            android:layout_height="@dimen/space_60"
+                            android:src="@drawable/ic_tyres"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100% Genuine product"
+                            android:textAlignment="center"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="@dimen/space_60"
+                            android:layout_height="@dimen/space_60"
+                            android:src="@drawable/ic_tyres"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Easy Return"
+                            android:textAlignment="center"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="@dimen/space_60"
+                            android:layout_height="@dimen/space_60"
+                            android:src="@drawable/ic_tyres"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AML Delivered"
+                            android:textAlignment="center"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="@dimen/space_60"
+                            android:layout_height="@dimen/space_60"
+                            android:src="@drawable/ic_tyres"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cash on Delivery"
+                            android:textAlignment="center"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="@dimen/space_60"
+                            android:layout_height="@dimen/space_60"
+                            android:src="@drawable/ic_tyres"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Payment Protection"
+                            android:textAlignment="center"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/aluminum"
+                    />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_40"
+                    app:tabBackground="@color/white"
+
+
+                    app:tabGravity="fill"
+
+                    app:tabMode="fixed"
+                    app:tabIndicatorColor="@color/bar_background"
+                    app:tabIndicatorHeight="@dimen/space_2" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:context=".activities.ProductListActivity">
+
+        <include layout="@layout/toolbar_search_cart" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/space_5"
+                    android:paddingLeft="@dimen/space_5"
+                    android:paddingTop="@dimen/space_10"
+                    android:paddingBottom="@dimen/space_10"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:background="@color/bar_background"
+                    >
+
+
+
+
+                    <EditText
+                        android:layout_weight="0.6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_border_grey"
+                        android:drawableLeft="@drawable/ic_location"
+                        android:paddingLeft="@dimen/space_5"
+                        android:id="@+id/et_location"
+                        android:hint="No location "
+                        android:focusable="false"
+                        android:textSize="@dimen/text_size_14sp"
+
+                        android:paddingTop="@dimen/space_5"
+                        android:layout_margin="@dimen/space_3"
+                        android:paddingBottom="@dimen/space_5"
+                        />
+                    <EditText
+                        android:layout_weight="0.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_border_grey"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:paddingLeft="@dimen/space_5"
+                    android:paddingTop="@dimen/space_5"
+                        android:hint="Search"
+                        android:textSize="@dimen/text_size_14sp"
+                    android:layout_margin="@dimen/space_3"
+                    android:paddingBottom="@dimen/space_5"
+                    />
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/space_10"
+                    android:layout_height="wrap_content">
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Honda CBR 250 Engine Component"
+                            android:textStyle="bold"
+                            android:paddingLeft="@dimen/space_5"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/bar_background"
+                            android:textSize="@dimen/text_size_14sp"
+                            />
+
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_25"
+                        android:layout_margin="@dimen/space_5"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/shape_border_grey"
+                        android:text="Change"
+                        android:textAllCaps="true"
+                        android:textColor="@color/aluminum"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_12sp"
+                        />
+
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/aluminum"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10"
+                    android:textColor="@color/jet"
+                    android:text="Showing Results for Engine Piston"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/aluminum"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_product"
+                    ></androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</FrameLayout>

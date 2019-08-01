@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/frameMake"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60"
+            android:background="@drawable/shape_border_grey"
+            android:padding="@dimen/space_10"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/space_10"
+                android:text="Maker"
+                android:textColor="@color/bar_background"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_angle_down"
+
+                android:tint="@color/bar_background"
+
+                />
+        </FrameLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+
+            android:id="@+id/exMake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ael_duration="500"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_makers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frameModel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60"
+            android:background="@drawable/shape_border_grey"
+            android:padding="@dimen/space_10"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/space_10"
+                android:text="Model"
+                android:textColor="@color/bar_background"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_angle_down"
+
+                android:tint="@color/bar_background"
+
+                />
+        </FrameLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/exModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ael_duration="500"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frameVariant"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60"
+            android:background="@drawable/shape_border_grey"
+            android:padding="@dimen/space_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/space_10"
+                android:text="Variant"
+                android:textColor="@color/bar_background"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_angle_down"
+
+                android:tint="@color/bar_background"
+
+                />
+        </FrameLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+
+            android:id="@+id/exVariant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ael_duration="500"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_variant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frameFuelType"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60"
+            android:background="@drawable/shape_border_grey"
+            android:padding="@dimen/space_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/space_10"
+                android:text="Fuel Type"
+                android:textColor="@color/bar_background"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_angle_down"
+                android:tint="@color/bar_background" />
+
+        </FrameLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/exFuelType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ael_duration="500"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rgFuel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbPetrol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10"
+                    android:text="Petrol" />
+
+                <RadioButton
+                    android:id="@+id/rbDiesel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10"
+                    android:text="Diesel" />
+
+
+            </RadioGroup>
+
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frameMakeYear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60"
+            android:background="@drawable/shape_border_grey"
+            android:padding="@dimen/space_10"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/space_10"
+                android:text="Make Year"
+                android:textColor="@color/bar_background"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_angle_down"
+
+                android:tint="@color/bar_background"
+
+                />
+        </FrameLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/exMakeYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ael_duration="500"
+            app:ael_expanded="false"
+
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_20"
+                android:background="@drawable/shape_border_grey"
+                android:hint="Year of Manufacturing"
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingTop="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:paddingBottom="@dimen/space_10" />
+
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_50"
+            android:background="@color/bar_background"
+            android:paddingLeft="@dimen/space_80"
+            android:paddingTop="@dimen/space_15"
+            android:paddingRight="@dimen/space_80"
+            android:paddingBottom="@dimen/space_15"
+            android:text="Search"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

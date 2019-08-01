@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/space_50"
+    android:orientation="vertical"
+    tools:context=".activities.HomeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/space_48"
+        android:padding="@dimen/space_5"
+        >
+
+        <EditText
+            android:layout_width="@dimen/space_140"
+            android:layout_height="@dimen/space_30"
+            android:layout_gravity="center_vertical"
+            android:drawableRight="@drawable/ic_search"
+            android:paddingRight="@dimen/space_5"
+            android:hint="Search"
+            android:textSize="@dimen/text_size_14sp"
+            android:paddingLeft="@dimen/space_20"
+            android:background="@drawable/drawable_search"
+
+            />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right|center_vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notifications"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location"
+            />
+
+    </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_10"
+            android:weightSum="3"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+
+                android:layout_margin="@dimen/space_5"
+                app:cardCornerRadius="@dimen/space_5"
+                android:id="@+id/cv_services"
+                app:cardElevation="@dimen/space_10"
+                app:cardMaxElevation="@dimen/space_10"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/space_84"
+                        android:layout_height="@dimen/space_50"
+                        android:src="@drawable/ic_car"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Services"
+                        android:textColor="@color/oil"
+                        android:textSize="@dimen/text_size_18sp"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/space_5"
+                app:cardCornerRadius="@dimen/space_5"
+                android:id="@+id/cv_accessories"
+                android:padding="@dimen/space_10"
+                app:cardElevation="@dimen/space_10"
+                app:cardMaxElevation="@dimen/space_10"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:paddingTop="@dimen/space_10"
+                        android:paddingBottom="@dimen/space_10"
+                        android:layout_width="@dimen/space_84"
+                        android:layout_height="@dimen/space_50"
+                        android:src="@drawable/ic_tyres"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accessories"
+                        android:textColor="@color/oil"
+                        android:textSize="@dimen/text_size_18sp"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/space_5"
+                app:cardCornerRadius="@dimen/space_5"
+                app:cardElevation="@dimen/space_10"
+                android:id="@+id/cv_others"
+                android:padding="@dimen/space_10"
+                app:cardMaxElevation="@dimen/space_10"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/space_84"
+                        android:layout_height="@dimen/space_50"
+                        android:src="@drawable/ic_ac"
+                        android:paddingTop="@dimen/space_5"
+                        android:paddingBottom="@dimen/space_5"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Others"
+                        android:textColor="@color/oil"
+                        android:textSize="@dimen/text_size_18sp"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="@dimen/space_10"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Services"
+
+                android:textColor="@color/welcome"
+                android:textSize="@dimen/text_size_18sp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cars"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/space_10"
+                android:textColor="@color/welcome"
+                android:textSize="@dimen/text_size_18sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout> -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/space_50"
+        android:id="@+id/frame"
+        ></FrameLayout>
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:layout_gravity="bottom" />
+</FrameLayout>

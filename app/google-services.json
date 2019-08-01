@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "234238385744",
+    "firebase_url": "https://automationlead-ac9f7.firebaseio.com",
+    "project_id": "automationlead-ac9f7",
+    "storage_bucket": "automationlead-ac9f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234238385744:android:d2b1a88c2af58890",
+        "android_client_info": {
+          "package_name": "in.aspiretechnovations.aml"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234238385744-tjlr627f5geb4lhq9lkeuundmf6krlq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.aspiretechnovations.aml",
+            "certificate_hash": "b6d2b33651b1d9be2437a47c0087869e7f1ad5ff"
+          }
+        },
+        {
+          "client_id": "234238385744-eqkd61mvrpjg8e8tpodst6fsjgogpvuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnglPQT9UbgKwQRdJeNuhqmDitNhxJEms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234238385744-eqkd61mvrpjg8e8tpodst6fsjgogpvuo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

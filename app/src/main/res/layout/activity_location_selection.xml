@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activities.LocationSelectionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_54"
+        android:id="@+id/toolbar"
+        ></androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Welcome, Have a great day!"
+            android:textSize="@dimen/text_size_14sp"
+            android:layout_marginTop="@dimen/space_60"
+
+            android:textColor="@color/bar_background"
+
+            android:layout_marginBottom="@dimen/space_15"
+            />
+
+
+
+
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+        <Button
+            android:layout_width="@dimen/space_320"
+            android:layout_marginRight="@dimen/space_30"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_marginTop="@dimen/space_20"
+            android:text="Your current location"
+            android:paddingLeft="@dimen/space_40"
+            android:paddingRight="@dimen/space_40"
+
+            android:textSize="@dimen/text_size_12sp"
+
+            android:id="@+id/btn_location"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawableTint="@color/white"
+
+            android:textColor="@color/white"
+
+            android:background="@drawable/shape_violet"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <Button
+            android:layout_width="@dimen/space_320"
+            android:layout_marginRight="@dimen/space_30"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_marginTop="@dimen/space_20"
+            android:text="Different location"
+            android:paddingLeft="@dimen/space_40"
+            android:paddingRight="@dimen/space_40"
+
+            android:textSize="@dimen/text_size_12sp"
+
+            android:drawableLeft="@drawable/ic_search"
+            android:drawableTint="@color/bar_background"
+
+            android:textColor="@color/bar_background"
+
+            android:background="@drawable/shape_border_violet"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

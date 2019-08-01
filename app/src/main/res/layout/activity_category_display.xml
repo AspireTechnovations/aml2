@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:context=".activities.CategoryDisplayActivity">
+
+        <include layout="@layout/toolbar_search_cart" />
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_10"
+                android:orientation="vertical"
+                android:background="@color/bar_background"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change  Vehicle"
+                    android:id="@+id/tv_change"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/space_10"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16sp"
+                    />
+
+
+            </LinearLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_10"
+                android:orientation="vertical"
+                android:background="@color/bar_background"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Honda CBR 250 All Components"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/space_10"
+                    android:layout_gravity="left"
+                    android:id="@+id/tv_vehicle_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16sp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rv_category"
+                ></androidx.recyclerview.widget.RecyclerView>
+
+
+<!-- Static data -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_5"
+                android:weightSum="3"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10"
+
+                    android:layout_margin="@dimen/space_5"
+                    app:cardCornerRadius="@dimen/space_5"
+
+                    app:cardElevation="@dimen/space_10"
+                    app:cardMaxElevation="@dimen/space_10"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/space_84"
+                            android:layout_height="@dimen/space_50"
+                            android:src="@drawable/ic_car"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Exteriors
+"
+                            android:textColor="@color/oil"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/text_size_14sp"
+
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/space_5"
+                    app:cardCornerRadius="@dimen/space_5"
+
+                    android:padding="@dimen/space_10"
+                    app:cardElevation="@dimen/space_10"
+                    app:cardMaxElevation="@dimen/space_10"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:paddingTop="@dimen/space_10"
+                            android:paddingBottom="@dimen/space_10"
+                            android:layout_width="@dimen/space_84"
+                            android:layout_height="@dimen/space_50"
+                            android:src="@drawable/ic_tyres"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Engine Components"
+                            android:textColor="@color/oil"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/text_size_14sp"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/space_5"
+                    app:cardCornerRadius="@dimen/space_5"
+                    app:cardElevation="@dimen/space_10"
+
+                    android:padding="@dimen/space_10"
+                    app:cardMaxElevation="@dimen/space_10"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/space_84"
+                            android:layout_height="@dimen/space_50"
+                            android:src="@drawable/ic_ac"
+                            android:paddingTop="@dimen/space_5"
+                            android:paddingBottom="@dimen/space_5"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_margin="@dimen/space_1"
+                            android:layout_height="wrap_content"
+                            android:text="Transmission and Gearbox"
+                            android:textColor="@color/oil"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/text_size_14sp"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_5"
+                android:weightSum="3"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10"
+
+                    android:layout_margin="@dimen/space_5"
+                    app:cardCornerRadius="@dimen/space_5"
+
+                    app:cardElevation="@dimen/space_10"
+                    app:cardMaxElevation="@dimen/space_10"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/space_84"
+                            android:layout_height="@dimen/space_50"
+                            android:src="@drawable/ic_car"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Suspensions
+"
+                            android:textColor="@color/oil"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/text_size_14sp"
+
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/space_5"
+                    app:cardCornerRadius="@dimen/space_5"
+
+                    android:padding="@dimen/space_10"
+                    app:cardElevation="@dimen/space_10"
+                    app:cardMaxElevation="@dimen/space_10"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:paddingTop="@dimen/space_10"
+                            android:paddingBottom="@dimen/space_10"
+                            android:layout_width="@dimen/space_84"
+                            android:layout_height="@dimen/space_50"
+                            android:src="@drawable/ic_tyres"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Braking Systems
+"
+                            android:textColor="@color/oil"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/text_size_14sp"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/space_5"
+                    app:cardCornerRadius="@dimen/space_5"
+                    app:cardElevation="@dimen/space_10"
+
+                    android:padding="@dimen/space_10"
+                    app:cardMaxElevation="@dimen/space_10"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/space_84"
+                            android:layout_height="@dimen/space_50"
+                            android:src="@drawable/ic_ac"
+                            android:paddingTop="@dimen/space_5"
+                            android:paddingBottom="@dimen/space_5"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_margin="@dimen/space_1"
+                            android:layout_height="wrap_content"
+                            android:text="Drivelines and Axles"
+                            android:textColor="@color/oil"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/text_size_14sp"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_5"
+                android:weightSum="3"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10"
+
+                    android:layout_margin="@dimen/space_5"
+                    app:cardCornerRadius="@dimen/space_5"
+
+                    app:cardElevation="@dimen/space_10"
+                    app:cardMaxElevation="@dimen/space_10"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="134dp"
+                        android:layout_height="74dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/space_84"
+                            android:layout_height="@dimen/space_50"
+                            android:src="@drawable/ic_car" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fuel System
+"
+                            android:textAlignment="center"
+                            android:textColor="@color/oil"
+                            android:textSize="@dimen/text_size_14sp"
+
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/space_5"
+                    app:cardCornerRadius="@dimen/space_5"
+
+                    android:padding="@dimen/space_10"
+                    app:cardElevation="@dimen/space_10"
+                    app:cardMaxElevation="@dimen/space_10"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:paddingTop="@dimen/space_10"
+                            android:paddingBottom="@dimen/space_10"
+                            android:layout_width="@dimen/space_84"
+                            android:layout_height="@dimen/space_50"
+                            android:src="@drawable/ic_tyres"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Starting and Charging"
+                            android:textColor="@color/oil"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/text_size_14sp"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/space_5"
+                    app:cardCornerRadius="@dimen/space_5"
+                    app:cardElevation="@dimen/space_10"
+
+                    android:padding="@dimen/space_10"
+                    app:cardMaxElevation="@dimen/space_10"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/space_84"
+                            android:layout_height="@dimen/space_50"
+                            android:src="@drawable/ic_ac"
+                            android:paddingTop="@dimen/space_5"
+                            android:paddingBottom="@dimen/space_5"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_margin="@dimen/space_1"
+                            android:layout_height="wrap_content"
+                            android:text="Lights System"
+                            android:textColor="@color/oil"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/text_size_14sp"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activities.OtpLoginActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_54"
+        android:id="@+id/toolbar"
+        ></androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:background="@color/button_color"
+        android:padding="@dimen/space_10"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+
+
+            android:layout_height="wrap_content"
+            android:text="New User Registration"
+            android:textSize="@dimen/text_size_16sp"
+            android:fontFamily="serif"
+
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_10"
+        android:gravity="center"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_120"
+            android:visibility="gone"
+            android:src="@drawable/logo_aml"
+
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/space_10"
+            android:paddingLeft="@dimen/space_18"
+            android:text="Name"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Owner's Full name"
+            android:paddingTop="@dimen/space_10"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10"
+            android:background="@drawable/shape_border_grey"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_6"
+
+            android:layout_marginBottom="@dimen/space_6"
+            android:layout_marginLeft="@dimen/space_20"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/space_10"
+            android:paddingLeft="@dimen/space_18"
+            android:text="Individual/ Retailer/ Service Man"
+            />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginBottom="@dimen/space_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@drawable/shape_border_grey"
+
+            >
+
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:paddingTop="@dimen/space_10"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:paddingLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_20"
+                android:entries="@array/user_type"
+
+                android:layout_marginTop="@dimen/space_6"
+                android:layout_marginBottom="@dimen/space_6"
+                android:layout_marginLeft="@dimen/space_20"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/space_10"
+            android:paddingLeft="@dimen/space_18"
+            android:text="If user is Retailer or Service Man, will ask Business name"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:paddingTop="@dimen/space_10"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10"
+            android:background="@drawable/shape_border_grey"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_6"
+            android:layout_marginBottom="@dimen/space_6"
+            android:layout_marginLeft="@dimen/space_20"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/space_10"
+            android:paddingLeft="@dimen/space_18"
+            android:text="Mobile Number"
+            />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginBottom="@dimen/space_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@drawable/shape_border_grey"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91"
+                android:textSize="@dimen/text_size_18sp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/space_6"
+                android:textColor="@color/aluminum"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="10 Digit mobile number"
+                android:paddingTop="@dimen/space_10"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:paddingLeft="@dimen/space_10"
+                android:background="@drawable/shape_no_border"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_6"
+                android:layout_marginBottom="@dimen/space_6"
+                android:layout_marginLeft="@dimen/space_20"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/space_10"
+            android:paddingLeft="@dimen/space_18"
+            android:text="Email ID"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:paddingTop="@dimen/space_10"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10"
+            android:background="@drawable/shape_border_grey"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_6"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="@dimen/space_6"
+            android:layout_marginLeft="@dimen/space_20"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/space_10"
+            android:paddingLeft="@dimen/space_18"
+            android:text="Pincode"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Location Pin Code"
+            android:paddingTop="@dimen/space_10"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10"
+            android:background="@drawable/shape_border_grey"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_6"
+            android:layout_marginBottom="@dimen/space_6"
+            android:layout_marginLeft="@dimen/space_20"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/space_5"
+            android:paddingLeft="@dimen/space_18"
+            android:textColor="@color/black"
+            android:text="If you have read and agree to the Terms and Conditions, please continue"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/space_30"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="Submit for Approval"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/btn_login"
+            android:background="@drawable/shape_violet"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_5"
+
+    android:background="@drawable/shape_white_round_corner">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_quote"
+        android:id="@+id/tv_dialog_title"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_18sp"
+        android:padding="@dimen/space_10"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/monsoon"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/space_5"
+        >
+
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/shape_rounded_border_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/et_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/transparent"
+                android:hint="@string/product_name"
+                android:maxLines="1"
+
+                android:focusable="false"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/monsoon"
+                android:textSize="@dimen/text_size_15sp" />
+
+
+              </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/shape_rounded_border_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/transparent"
+                android:hint="@string/qty"
+                android:id="@+id/et_qty"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/monsoon"
+                android:textSize="@dimen/text_size_15sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/shape_rounded_border_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+
+                android:backgroundTint="@color/transparent"
+                android:hint="@string/description"
+                android:id="@+id/et_description"
+                android:inputType="textLongMessage"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/monsoon"
+                android:textSize="@dimen/text_size_15sp" />
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btn_submit"
+
+            android:layout_width="@dimen/space_140"
+            android:layout_height="@dimen/space_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_15"
+            android:background="@drawable/shape_rect_gradient_accent"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20sp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

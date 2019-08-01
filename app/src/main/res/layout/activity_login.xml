@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activities.OtpLoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_120"
+            android:src="@drawable/logo_aml"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to your account"
+            android:textSize="@dimen/text_size_24sp"
+            android:fontFamily="serif"
+            android:layout_margin="@dimen/space_22"
+            android:textColor="@color/aluminum"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter your Mobile Number"
+            android:textSize="@dimen/text_size_20sp"
+
+            android:textColor="@color/aluminum"
+            android:layout_marginBottom="@dimen/space_25"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:paddingTop="@dimen/space_10"
+            android:id="@+id/et_mobile_no"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:inputType="number"
+            android:paddingLeft="@dimen/space_10"
+            android:background="@drawable/shape_border_grey"
+            android:layout_margin="@dimen/space_20"
+            />
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_marginRight="@dimen/space_30"
+          android:layout_marginLeft="@dimen/space_30"
+          android:layout_marginTop="@dimen/space_10"
+          android:text="Login/SignUp ->"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+          android:id="@+id/btn_login"
+          android:background="@drawable/shape_rect_gradient_primary"
+          android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ServiceFilterActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/space_48"
+        android:padding="@dimen/space_5"
+        >
+
+        <EditText
+            android:layout_width="@dimen/space_140"
+            android:layout_height="@dimen/space_30"
+            android:layout_gravity="center_vertical"
+            android:drawableRight="@drawable/ic_search"
+            android:paddingRight="@dimen/space_5"
+            android:hint="Search"
+            android:textSize="@dimen/text_size_14sp"
+            android:id="@+id/et_search"
+            android:paddingLeft="@dimen/space_20"
+            android:background="@drawable/drawable_search"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right|center_vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_notifications"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location"
+                />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_10"
+            android:orientation="vertical"
+            android:background="@color/bar_background"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Your Vehicle"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/space_10"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18sp"
+                />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs_home"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            app:tabBackground="@color/white"
+
+
+            app:tabGravity="fill"
+
+            app:tabMode="fixed"
+            app:tabIndicatorColor="@color/bar_background"
+            app:tabIndicatorHeight="@dimen/space_2" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

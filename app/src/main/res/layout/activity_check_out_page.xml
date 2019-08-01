@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CheckOutPageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/space_10"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="@dimen/space_80"
+            android:layout_height="@dimen/space_80"
+            android:background="@drawable/shape_border_grey"
+            />
+
+        <LinearLayout
+            android:layout_width="@dimen/space_220"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_6"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deliver to"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/space_5"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/bar_background"
+                android:textSize="@dimen/text_size_16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kadubeesanahalli"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/space_5"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/aluminum"
+                android:textSize="@dimen/text_size_14sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Products will be delivered within 40 mins"
+
+                android:paddingLeft="@dimen/space_5"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/aluminum"
+                android:textSize="@dimen/text_size_12sp"
+                />
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_25"
+            android:layout_margin="@dimen/space_5"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/shape_border_grey"
+            android:text="Change"
+            android:textAllCaps="true"
+            android:id="@+id/btn_address"
+            android:textColor="@color/aluminum"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_12sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/space_5"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingTop="@dimen/space_10"
+        android:paddingBottom="@dimen/space_10"
+
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Summary"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/space_10"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginBottom="@dimen/space_5"
+            android:textSize="@dimen/text_size_14sp"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/ll_no_data"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/space_54"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_no_cart_items"
+            android:textSize="@dimen/space_21"
+
+
+            />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_cart_items"
+
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_height="@dimen/space_2"
+        android:background="@color/aluminum"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_10"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload few snap of required product here"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/space_5"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/aluminum"
+            android:textSize="@dimen/text_size_14sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Any Comments?"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/space_5"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/aluminum"
+            android:textSize="@dimen/text_size_14sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_height="@dimen/space_2"
+        android:background="@color/aluminum"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="@dimen/space_10"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill Details: "
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/space_5"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/bar_background"
+            android:textSize="@dimen/text_size_14sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_5"
+
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/space_3"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Items: "
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/space_5"
+                    android:layout_gravity="left"
+                    android:textColor="@color/bar_background"
+                    android:textSize="@dimen/text_size_14sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Nos"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_items_count"
+                    android:paddingLeft="@dimen/space_5"
+                    android:layout_gravity="right"
+                    android:textColor="@color/bar_background"
+                    android:textSize="@dimen/text_size_14sp"
+                    />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/space_3"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offered Discount: "
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/space_5"
+                    android:layout_gravity="left"
+                    android:textColor="@color/bar_background"
+                    android:textSize="@dimen/text_size_14sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.-00.00"
+                    android:textStyle="bold"
+
+                    android:paddingLeft="@dimen/space_5"
+                    android:layout_gravity="right"
+                    android:textColor="@color/bar_background"
+                    android:textSize="@dimen/text_size_14sp"
+                    />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/space_3"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Fee: "
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/space_5"
+                    android:layout_gravity="left"
+                    android:textColor="@color/bar_background"
+                    android:textSize="@dimen/text_size_14sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Free"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+
+                    android:paddingLeft="@dimen/space_5"
+                    android:layout_gravity="right"
+
+                    android:textColor="@color/bar_background"
+                    android:textSize="@dimen/text_size_14sp"
+                    />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/space_3"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pay: "
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/space_5"
+                    android:layout_gravity="left"
+                    android:textColor="@color/bar_background"
+                    android:textSize="@dimen/text_size_14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+
+                    android:paddingLeft="@dimen/space_5"
+                    android:text="Rs.872.00"
+                    android:textColor="@color/bar_background"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_height="@dimen/space_2"
+                android:background="@color/aluminum"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/space_30"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="Proceed To Pay"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/btn_checkout"
+            android:background="@drawable/shape_rect_gradient_primary"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

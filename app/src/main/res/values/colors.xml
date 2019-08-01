@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="light_black">#888888</color>
+    <color name="light_grey">#f9f9f9</color>
+    <color name="table_header">#252c3c</color>
+
+    <color name="sky_blue">#0094cf</color>
+
+    <color name="dark_blue">#0073cf</color>
+    <color name="light_green">#61d28f</color>
+    <color name="light_red">#ff5050</color>
+    <color name="light_yellow">#f4ff50</color>
+    <color name="light_orange">#ff8850</color>
+    <color name="light_pink">#f15f79</color>
+    <color name="dark_pink">#b24592</color>
+
+
+
+    <color name="accent">#476691</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="colorPrimary">#354555</color>
+    <color name="colorPrimaryDark">#354555</color>
+    <color name="colorAccent">#FF5722</color>//#BBDEFB
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrayEditText">#F2F2F2</color>
+    <color name="colorSkyBlue">#6FA7FE</color>
+    <color name="colorGrayDark">#5E5E5E</color>
+    <color name="gray_transparent">#8dd1d1d1</color>
+    <color name="gray_transparent_bg">#8de6e4e4</color>
+    <color name="colorFacebook">#3B5999</color>
+    <color name="colorGoogle">#DE4B39</color>
+
+    <color name="orange">#FF6D00</color>
+    <color name="black">#000000</color>
+    <color name="monsoon">#777777</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="cart_bg_color">#f9f9f9</color>
+    <color name="blue">#FF0F92CC</color>
+    <color name="grey">#ffe6e6e6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_grey">#f7f6f6</color>
+    <color name="cart_cooking_color">#FFD42A</color>
+    <color name="primary_light">#FFCDD2</color>
+    <color name="red">#fc1212</color>
+    <color name="bgWindow">#E5E5E5</color>
+    <color name="facebook">#3B5998</color>
+    <color name="yellow">#ffef00</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="silver">#f7f3f3</color>
+    <color name="purple">#673AB7</color>
+    <color name="pink">#D500F9</color>
+    <color name="blue_dark">#2196F3</color>
+    <color name="orange_deep">#FF5722</color>
+    <color name="green">#008000</color>
+
+
+    <color name="title">#000000</color>
+    <color name="content_intro">#999999</color>
+
+    <color name="welcome">#808080</color>
+    <color name="log_in_to_continue">#b3b3b3</color>
+    <color name="log_in_email">#999999</color>
+    <color name="buttons">#808080</color>
+    <color name="text_boxes">#ccccccff</color>
+    <color name="button_color">#3c3c54</color>
+    <color name="already_member">#666666</color>
+
+    <color name="cars">#b3b3b3</color>
+    <color name="service_car">#ececec</color>
+    <color name="calendar">#808080</color>
+    <color name="bar_background">#56505c</color>
+
+
+
+
+</resources>

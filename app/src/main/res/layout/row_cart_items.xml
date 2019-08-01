@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+
+    android:background="@drawable/shape_border_grey"
+    android:layout_width="match_parent"
+    android:weightSum="1"
+    android:paddingTop="@dimen/space_10"
+    android:paddingBottom="@dimen/space_10"
+    android:paddingLeft="@dimen/space_5"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight=".2"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bar_background"
+            android:id="@+id/tv_item_name"
+            android:textStyle="bold"
+
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size_12sp"
+            android:text="Piston Ring Set"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight=".26"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:layout_width="@dimen/space_30"
+                android:layout_height="@dimen/space_30"
+                android:text="-"
+                android:textStyle="bold"
+                android:id="@+id/btn_minus"
+                android:textSize="@dimen/text_size_21sp"
+                android:textColor="@color/aluminum"
+                android:background="@drawable/shape_grey"
+                />
+            <EditText
+                android:layout_width="@dimen/space_30"
+                android:layout_height="@dimen/space_30"
+                android:text="2"
+                android:id="@+id/et_qty"
+                android:textSize="@dimen/text_size_14sp"
+                android:textAlignment="center"
+                android:textColor="@color/aluminum"
+                android:background="@drawable/shape_border_grey"
+                />
+            <Button
+                android:layout_width="@dimen/space_30"
+                android:layout_height="@dimen/space_30"
+                android:background="@drawable/shape_grey"
+                android:text="+"
+                android:id="@+id/btn_plus"
+                android:textStyle="bold"
+                android:textColor="@color/aluminum"
+                android:textSize="@dimen/text_size_16sp"
+
+                />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight=".26"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+
+            android:textStyle="bold"
+
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size_12sp"
+            android:text="Remove"
+            android:id="@+id/tv_delete"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight=".28"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bar_background"
+
+            android:textStyle="bold"
+            android:id="@+id/tv_product_price"
+
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size_12sp"
+            android:text="Rs.230"
+            android:layout_gravity="center"
+
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
